@@ -2,17 +2,17 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Carpet {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         int[] solution = solution(24, 24);
         System.out.println(solution[0] + " : " + solution[1]);
     }
 
-    public static int[] solution(int brown, int yellow) {
+    public  int[] solution(int brown, int yellow) {
         int[] answer = findWidthHeight(brown, yellow);
         return answer;
     }
 
-    private static int[] findWidthHeight(int brown, int yellow) {
+    private  int[] findWidthHeight(int brown, int yellow) {
         int[] result = new int[2];
         Set<Integer> yellowFactor = findFactor(yellow);
         for (int factor : yellowFactor) {
@@ -27,7 +27,7 @@ public class Carpet {
         return result;
     }
 
-    private static Set<Integer> findFactor(int yellow) {
+    private  Set<Integer> findFactor(int yellow) {
         Set<Integer> factors = new HashSet<>();
         if(yellow == 1) {
             factors.add(1);

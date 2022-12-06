@@ -2,13 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DevelopOperation {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         int[] progresses = {95, 90, 99, 99, 80, 99};
         int[] speeds = {1, 1, 1, 1, 1, 1};
         System.out.println(solution(progresses, speeds));
     }
 
-    public static int[] solution(int[] progresses, int[] speeds) {
+    public  int[] solution(int[] progresses, int[] speeds) {
         List<Integer> results = new ArrayList<>();
         int days = calculateMergeDays(progresses[0], speeds[0]);
         int cnt = 1;
@@ -38,7 +38,7 @@ public class DevelopOperation {
         return answer;
     }
 
-    private static int calculateMergeDays(int progress, int speed) {
+    private  int calculateMergeDays(int progress, int speed) {
         int devProgresses = 100 - progress;
         if(devProgresses % speed > 0) {
             return devProgresses / speed + 1;

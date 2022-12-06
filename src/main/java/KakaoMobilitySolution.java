@@ -1,5 +1,5 @@
 public class KakaoMobilitySolution {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         KakaoMobilitySolution kakaoMobilitySolution = new KakaoMobilitySolution();
         kakaoMobilitySolution.solution(28372301);
     }

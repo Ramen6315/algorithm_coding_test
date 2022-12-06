@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 //호출시점을 잘 파악 해야함
 public class CollatzReverse {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int n = scanner.nextInt();
@@ -13,7 +13,7 @@ public class CollatzReverse {
         System.out.println(n);
     }
 
-    private static void collatz(int n) {
+    private  void collatz(int n) {
         if(n == 1) {
             return;
         }

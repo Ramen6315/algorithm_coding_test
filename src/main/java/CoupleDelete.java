@@ -3,17 +3,17 @@ import java.util.List;
 import java.util.Stack;
 
 public class CoupleDelete {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         solution("baabaa");
     }
 
-    public static int solution(String s) {
+    public  int solution(String s) {
         int answer = deleteCoupleDelete(s);
 
         return answer;
     }
 
-    private static int deleteCoupleDelete(String s) {
+    private  int deleteCoupleDelete(String s) {
         Stack<Character> wordStack = new Stack<>();
         wordStack.push(s.charAt(0));
         for (int i = 1; i < s.length(); i++) {

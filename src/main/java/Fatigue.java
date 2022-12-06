@@ -2,7 +2,7 @@
 
 
 public class Fatigue {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         Fatigue fatigue = new Fatigue();
         int[][] dungeons = {
                 {80, 20},

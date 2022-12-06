@@ -1,10 +1,10 @@
 public class NumberRepresent {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         int solution = solution(15);
         System.out.println(solution);
     }
 
-    public static int solution(int n) {
+    public  int solution(int n) {
         int answer = 0;
         for (int i = 1; i <= n; i++) {
             answer += canRepresent(i, n);
@@ -12,7 +12,7 @@ public class NumberRepresent {
         return answer;
     }
 
-    private static int canRepresent(int i, int n) {
+    private  int canRepresent(int i, int n) {
         int result = i;
         if(result == n) {
             return 1;

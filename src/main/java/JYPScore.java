@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 // 지속적으로 최대 값을 찾아야 할 경우에는 우선순위Queue 사용을 생각하자
 public class JYPScore {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         JYPScore jypScore = new JYPScore();
         int[] works = {4, 3, 3};
         int n = 4;

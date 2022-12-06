@@ -1,5 +1,5 @@
 public class Airplane {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         Airplane airplane = new Airplane();
         airplane.solution(2, "1A 2F 1C");
     }

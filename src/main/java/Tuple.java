@@ -1,13 +1,13 @@
 import java.util.*;
 
 public class Tuple {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         int[] solution = solution("{{2},{2,1},{2,1,3},{2,1,3,4}}");
         for (int s : solution) {
             System.out.println(s);
         }
     }
-    public static int[] solution(String s) {
+    public  int[] solution(String s) {
         List<Integer> results = new ArrayList<>();
         List<String> split = List.of(s.split(""));
         StringBuilder stringBuilder = new StringBuilder();
@@ -33,7 +33,7 @@ public class Tuple {
         return answers;
     }
 
-    private static void addTupleComponent(List<Integer> results, String[] tupleStr) {
+    private  void addTupleComponent(List<Integer> results, String[] tupleStr) {
         for (String tuple : tupleStr) {
             int number = Integer.parseInt(tuple);
             if(!results.contains(number)) {

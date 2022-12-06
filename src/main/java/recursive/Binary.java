@@ -5,14 +5,14 @@ package recursive;
 import java.util.Scanner;
 
 public class Binary {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         String result = "";
         System.out.println(createBinary(n, result));
     }
 
-    private static String createBinary(int n, String result) {
+    private  String createBinary(int n, String result) {
         if (n < 2) {
             result += String.valueOf(n);
             return result;

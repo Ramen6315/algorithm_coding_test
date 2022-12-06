@@ -1,5 +1,5 @@
 public class SoloNumber  {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         SoloNumber soloNumber = new SoloNumber();
         int[] A = {9, 3, 9, 3, 9, 7, 9};
         System.out.println(soloNumber.solution(A));

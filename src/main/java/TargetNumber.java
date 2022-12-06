@@ -3,7 +3,7 @@ import java.util.Queue;
 
 public class TargetNumber {
 
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         TargetNumber targetNumber = new TargetNumber();
         int[] numbers = {4, 1, 2, 1};
         int target = 4;

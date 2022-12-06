@@ -4,12 +4,12 @@ import java.util.Comparator;
 import java.util.List;
 
 public class PhoneNumber {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         String[] phone_book = {"123","456","789"};
         System.out.println(solution(phone_book));
     }
 
-    public static boolean solution(String[] phone_book) {
+    public  boolean solution(String[] phone_book) {
 
         Arrays.sort(phone_book);
         for (int i = 0; i < phone_book.length - 1; i++) {

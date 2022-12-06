@@ -1,12 +1,12 @@
 import java.util.*;
 
 public class HIndex {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         int[] citations = {1, 4};
         System.out.println(solution(citations));
     }
 
-    public static int solution(int[] citations) {
+    public  int solution(int[] citations) {
         List<Integer> citationList = new ArrayList<>();
         for (int citation : citations) {
             citationList.add(citation);

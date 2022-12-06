@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Solution {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         Solution solution = new Solution();
         String[] registered = {"cow", "cow1", "cow2", "cow3", "cow4", "cow5", "cow6"};
         solution.solution(registered, "cow");

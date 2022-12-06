@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Stack;
 
 public class Braket {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         solution("()()");
     }
     private static boolean solution(String s) {

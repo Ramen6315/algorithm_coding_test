@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class StockPrice {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         StockPrice stockPrice = new StockPrice();
         int[] input = {1, 2, 3, 2, 3};
         stockPrice.solution(input);

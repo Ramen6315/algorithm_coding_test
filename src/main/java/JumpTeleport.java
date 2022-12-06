@@ -1,15 +1,15 @@
 //DP 방식과 비슷하게 규칙성을 찾는게 포인트임
 
 public class JumpTeleport {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         System.out.println(solution(5000));
     }
 
-    public static int solution(int n) {
+    public  int solution(int n) {
         return calculateWays(n);
     }
 
-    private static int calculateWays(int n) {
+    private  int calculateWays(int n) {
         int cnt = 1;
         int number = n ;
         while(true) {

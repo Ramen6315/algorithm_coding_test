@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 public class Zip {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         Zip zip = new Zip();
         zip.solution("KAKAO");
     }

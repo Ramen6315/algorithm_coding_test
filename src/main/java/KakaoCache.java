@@ -3,12 +3,12 @@ import java.util.List;
 import java.util.Locale;
 
 public class KakaoCache {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         String[] cities = {"Jeju", "jeju", "jeju", "jeju"};
         System.out.println(solution(0, cities));
     }
 
-    public static int solution(int cacheSize, String[] cities) {
+    public  int solution(int cacheSize, String[] cities) {
         int answer = 0;
 
         List<City> cityList = new ArrayList<>();
@@ -34,13 +34,13 @@ public class KakaoCache {
         return answer;
     }
 
-    private static void increase(List<City> cityList) {
+    private  void increase(List<City> cityList) {
         for (City targetCity : cityList) {
             targetCity.increaseRecently();
         }
     }
 
-    private static void remove(List<City> cityList, int cacheSize) {
+    private  void remove(List<City> cityList, int cacheSize) {
         City removeCity = new City(0, "");
         for (City targetCity : cityList) {
             if(targetCity.getRecently() == cacheSize) {
@@ -51,7 +51,7 @@ public class KakaoCache {
         cityList.remove(removeCity);
     }
 
-    private static void hitLRU(List<City> cityList, String city) {
+    private  void hitLRU(List<City> cityList, String city) {
         int targetRecently = 0;
         for (City targetCity : cityList) {
             if(targetCity.isSame(city)) {
@@ -66,7 +66,7 @@ public class KakaoCache {
         }
     }
 
-    private static boolean isContainCity(List<City> cityList, String city) {
+    private  boolean isContainCity(List<City> cityList, String city) {
         for (City targetCity : cityList) {
             if(targetCity.isSame(city)) {
                 return true;
@@ -75,7 +75,7 @@ public class KakaoCache {
         return false;
     }
 
-    static class City {
+     class City {
         public int recently;
         public String city;
 

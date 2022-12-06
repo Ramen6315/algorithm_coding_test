@@ -6,13 +6,13 @@ import java.util.PriorityQueue;
 //숫자의 우선순위를 정해놓은 값들과 기존의 값들 두개를 가지고 첫 가장큰수위치를 찾으면서 진행하고 있음
 //
 public class Printer {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         int[] pri = {1, 1, 9, 1, 1, 1};
         int location = 0;
         System.out.println(solution(pri, location));
     }
 
-    public static int solution(int[] priorities, int location) {
+    public  int solution(int[] priorities, int location) {
         int answer = 0;
         PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(Comparator.reverseOrder());
 

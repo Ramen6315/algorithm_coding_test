@@ -3,7 +3,7 @@ package recursive;
 import java.util.Scanner;
 
 public class BetweenOddNumber {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String inputs = scanner.nextLine();
         String[] inputArr = inputs.split(" ");
@@ -13,7 +13,7 @@ public class BetweenOddNumber {
 
     }
 
-    private static void betweenOddNumber(int start, int end) {
+    private  void betweenOddNumber(int start, int end) {
         if(start > end) {
             return;
         } else {

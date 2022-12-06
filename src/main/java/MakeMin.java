@@ -5,13 +5,13 @@ import java.util.List;
 
 //https://school.programmers.co.kr/learn/courses/30/lessons/12941
 public class MakeMin {
-    public static void main(String args[]) {
+    public  void main(String args[]) {
         int[] a = {1, 4, 2};
         int[] b = {5, 4, 4};
         solution(a, b);
     }
 
-    public static int solution(int[] A, int[] B) {
+    public  int solution(int[] A, int[] B) {
         int answer = 0;
         List<Integer> aList = new ArrayList<>();
         List<Integer> bList = new ArrayList<>();

@@ -1,11 +1,11 @@
 import java.util.*;
 
 public class BraketCircle {
-    public static void main(String args[]) {
+    public  void main(String args[]) {
         System.out.println(solution("}]()[{"));
     }
 
-    public static int solution(String s) {
+    public  int solution(String s) {
         int answer = 0;
         String[] braketArray = s.split("");
         Queue<String> braketQueue = new LinkedList<>(Arrays.asList(braketArray));
@@ -19,14 +19,14 @@ public class BraketCircle {
         return answer;
     }
 
-    private static Queue<String> aroundBraketQueue(Queue<String> braketQueue) {
+    private  Queue<String> aroundBraketQueue(Queue<String> braketQueue) {
         String firstQueueBraket = braketQueue.poll();
         braketQueue.add(firstQueueBraket);
 
         return braketQueue;
     }
 
-    private static int checkCompleteBracket(Queue<String> braketQueue) {
+    private  int checkCompleteBracket(Queue<String> braketQueue) {
         Queue<String> brakets = new LinkedList<>(braketQueue);
         Stack<String> braketStack = new Stack<>();
         while(!brakets.isEmpty()) {

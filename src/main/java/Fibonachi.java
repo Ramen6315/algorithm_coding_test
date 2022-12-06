@@ -1,11 +1,11 @@
 import java.math.BigDecimal;
 
 public class Fibonachi {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         System.out.println(solution(10000));
     }
 
-    public static int solution(int n) {
+    public  int solution(int n) {
 
         BigDecimal fibo = fibo(n);
         BigDecimal divide = fibo.remainder(new BigDecimal(1234567));
@@ -13,7 +13,7 @@ public class Fibonachi {
         return divide.intValue();
     }
 
-    private static BigDecimal fibo(int n) {
+    private  BigDecimal fibo(int n) {
         BigDecimal[] fiboDP = new BigDecimal[n+1];
         fiboDP[0] = new BigDecimal(0);
         fiboDP[1] = new BigDecimal(1);

@@ -3,10 +3,10 @@ import java.util.List;
 
 // 이문제는 다시 풀어보는게 좋음
 public class ArrayCutting {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         System.out.println(solution(4, 7, 14));
     }
-    public static int[] solution(int n, long left, long right) {
+    public int[] solution(int n, long left, long right) {
         int[] answer = new int[(int) (right - left + 1)];
         int[] num = new int[n];
         for (int i = 0; i < num.length; i++) {

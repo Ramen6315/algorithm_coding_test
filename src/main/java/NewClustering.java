@@ -2,11 +2,11 @@ import java.util.*;
 
 public class NewClustering {
 
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         System.out.println(solution("aa1+aa2", "AAAA12"));
     }
 
-    public static int solution(String str1, String str2) {
+    public  int solution(String str1, String str2) {
         Map<String, Integer> str1Maps = new HashMap<>();
         Map<String, Integer> str2Maps = new HashMap<>();
 
@@ -25,7 +25,7 @@ public class NewClustering {
         return (int) ((double) min / (double) max * 65536);
     }
 
-    private static void splitJakad(String str1, Map<String, Integer> str1Maps) {
+    private  void splitJakad(String str1, Map<String, Integer> str1Maps) {
         for (int i = 0; i < str1.length() - 1; i++) {
             String substr1 = str1.substring(i, i + 2).toUpperCase(Locale.ROOT);
             if(isOnlyAlphabet(substr1)) {
@@ -38,7 +38,7 @@ public class NewClustering {
         }
     }
 
-    private static int findAll(Map<String, Integer> str1Maps, Map<String, Integer> str2Maps) {
+    private  int findAll(Map<String, Integer> str1Maps, Map<String, Integer> str2Maps) {
         int results = 0;
         Set<String> strSet = new HashSet<>();
         strSet.addAll(str1Maps.keySet());
@@ -61,7 +61,7 @@ public class NewClustering {
         return results;
     }
 
-    private static int findDuplicate(Map<String, Integer> str1Maps, Map<String, Integer> str2Maps) {
+    private  int findDuplicate(Map<String, Integer> str1Maps, Map<String, Integer> str2Maps) {
         int answer = 0;
         for (String str1 : str1Maps.keySet()) {
             if(str2Maps.containsKey(str1)) {
@@ -75,7 +75,7 @@ public class NewClustering {
         return answer;
     }
 
-    private static boolean isOnlyAlphabet(String substr1) {
+    private  boolean isOnlyAlphabet(String substr1) {
         String[] split = substr1.split("");
         if((split[0].charAt(0) > 64 && split[0].charAt(0) < 91)
                 && (split[1].charAt(0) > 64 && split[1].charAt(0) < 91)) {

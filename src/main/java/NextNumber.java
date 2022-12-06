@@ -2,16 +2,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NextNumber {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         System.out.println(solution(78));
     }
 
-    public static int solution(int n) {
+    public  int solution(int n) {
         int answer = findNextNumber(n);
         return answer;
     }
 
-    private static int findNextNumber(int n) {
+    private  int findNextNumber(int n) {
         int answer = 0;
         int nOneCnt = findOneCnt(n);
         for (int i = n+1; i <= 1000000; i++) {
@@ -23,7 +23,7 @@ public class NextNumber {
         return answer;
     }
 
-    private static int findOneCnt(int n) {
+    private  int findOneCnt(int n) {
         int cnt = 0;
         int number = n;
         while(true) {
@@ -41,7 +41,7 @@ public class NextNumber {
         return cnt;
     }
 
-    private static int findOneCnt(int i, int nOneCnt) {
+    private  int findOneCnt(int i, int nOneCnt) {
         int cnt = 0;
         int number = i;
         while(true) {

@@ -1,11 +1,11 @@
 import java.util.Arrays;
 
 public class BestAggregate {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         System.out.println(solution(2, 1));
     }
 
-    public static int[] solution(int n, int s) {
+    public int[] solution(int n, int s) {
         int middle = s / n;
         int[] middleNum = new int[n];
         if(middle == 0) {

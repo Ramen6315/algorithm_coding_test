@@ -3,7 +3,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Network {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         Network network = new Network();
         int n = 4;
         int[][] computers = {{1, 1, 0, 1}, {1, 1, 0, 0 }, {0, 0, 1, 1}, {1, 0, 1, 1}};

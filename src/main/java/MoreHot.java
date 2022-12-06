@@ -2,7 +2,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class MoreHot {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         MoreHot moreHot = new MoreHot();
         int[] scoville =  {1, 2, 3, 9, 10, 12};
         int K = 7;

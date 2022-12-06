@@ -2,14 +2,14 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class EnglishGame {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         String[] words = {"hello", "observe", "effect", "take", "either", "recognize", "encourage", "ensure", "establish", "hang", "gather", "refer", "reference", "estimate", "executive"};
         int n = 5;
         solution(n, words);
 
     }
 
-    public static int[] solution(int n, String[] words) {
+    public  int[] solution(int n, String[] words) {
 
         int[] answer = findResult(n, words);
 
@@ -19,7 +19,7 @@ public class EnglishGame {
         return answer;
     }
 
-    private static int[] findResult(int n, String[] words) {
+    private  int[] findResult(int n, String[] words) {
         boolean isEnd = true;
         Set<String> uponWord = new HashSet<>();
         int playerTurn = 1;

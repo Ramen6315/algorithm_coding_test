@@ -3,7 +3,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class ChangeWord {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         ChangeWord changeWord = new ChangeWord();
         String begin = "aab";
         String target = "aba";

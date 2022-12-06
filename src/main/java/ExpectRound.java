@@ -1,9 +1,9 @@
 public class ExpectRound {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         solution(8, 4, 5);
     }
 
-    public static int solution(int n, int a, int b) {
+    public  int solution(int n, int a, int b) {
         int answer = 0;
         while(true) {
 

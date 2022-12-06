@@ -3,13 +3,13 @@ package recursive;
 import java.util.Scanner;
 
 public class CollatzBasic {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         collatzBasic(n);
     }
 
-    private static void collatzBasic(int n) {
+    private  void collatzBasic(int n) {
         if(n == 1) {
             System.out.println(n);
             return;

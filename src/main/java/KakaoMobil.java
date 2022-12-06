@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class KakaoMobil {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         KakaoMobil kakaoMobil = new KakaoMobil();
         int N = 3;
         int[] A = {1, 3};

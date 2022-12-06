@@ -4,18 +4,18 @@ import java.util.List;
 
 public class ConvertBinary {
 
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         solution("110010101001");
     }
 
-    public static int[] solution(String s) {
+    public  int[] solution(String s) {
         int[] answer = new int[2];
         List<String> numbersStr = Arrays.asList(s.split(""));
 
         return findResult(numbersStr);
     }
 
-    private static int[] findResult(List<String> numbersStr) {
+    private  int[] findResult(List<String> numbersStr) {
         int zeroDeleteCnt = 0;
         int convertCount = 0;
 
@@ -43,7 +43,7 @@ public class ConvertBinary {
         return answer;
     }
 
-    private static List<String> convertBinary(int size) {
+    private  List<String> convertBinary(int size) {
         List<String> numberStr = new ArrayList<>();
         int number = size;
         while(true) {

@@ -3,12 +3,12 @@ import java.util.Comparator;
 import java.util.List;
 
 public class DoublePriorityQueue {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         String[] operation = {"I -45", "I 653", "D 1", "I -642", "I 45", "I 97", "D 1", "D -1", "I 333"};
         System.out.println(solution(operation));
     }
 
-    public static int[] solution(String[] operations) {
+    public  int[] solution(String[] operations) {
         int[] answer = new int[2];
         List<Integer> storages = new ArrayList<>();
 

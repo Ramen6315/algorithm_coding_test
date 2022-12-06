@@ -3,7 +3,7 @@ package recursive;
 import java.util.Scanner;
 
 public class SuperSum {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while(scanner.hasNext()) {
             String next = scanner.nextLine();
@@ -15,7 +15,7 @@ public class SuperSum {
         }
     }
 
-    private static int superSum(int k, int n, int[][] memoization) {
+    private  int superSum(int k, int n, int[][] memoization) {
         int result = 0;
         if (k > 0) {
             for (int i = 1; i <= n; i++) {

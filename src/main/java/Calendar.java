@@ -1,9 +1,9 @@
 public class Calendar {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         System.out.println(solution(11, 30));
     }
 
-    public static String solution(int a, int b) {
+    public  String solution(int a, int b) {
         String[] days = {"FRI","SAT","SUN","MON","TUE","WED","THU"};
         int month = -1;
         for(int i=1; i < a; i++) {

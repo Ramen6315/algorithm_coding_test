@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class KNum {
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         System.out.println(solution(437674, 3));
     }
 
-    public static int solution(int n, int k) {
+    public  int solution(int n, int k) {
         int answer = 0;
         String kNumStr = findKNum(n, k);
 
@@ -20,7 +20,7 @@ public class KNum {
         return answer;
     }
 
-    private static int findPrime(String kNumStr) {
+    private  int findPrime(String kNumStr) {
         long kNum = Long.parseLong(kNumStr);
         if(kNum <= 1) {
             return 0;
@@ -33,7 +33,7 @@ public class KNum {
         return 1;
     }
 
-    private static String findKNum(int n, int k) {
+    private  String findKNum(int n, int k) {
         StringBuilder str = new StringBuilder();
         int num = n;
         List<Integer> kNums = new ArrayList<>();
