@@ -3,14 +3,14 @@ package recursive;
 import java.util.Scanner;
 
 public class FibonachiRecursive {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int result = 1;
         System.out.println(fibonachi(n, result));
     }
 
-    private static  int fibonachi(int n, int result) {
+    private  int fibonachi(int n, int result) {
         if(n < 3) {
             return 1;
         } else {

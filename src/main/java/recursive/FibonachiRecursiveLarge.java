@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class FibonachiRecursiveLarge {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         BigDecimal result = BigDecimal.valueOf(1);
@@ -12,7 +12,7 @@ public class FibonachiRecursiveLarge {
         System.out.println(fibonachi(BigDecimal.valueOf(n), result, memoization).remainder(BigDecimal.valueOf(10009)).intValue());
     }
 
-    private static BigDecimal fibonachi(BigDecimal n, BigDecimal result, BigDecimal[] memoization) {
+    private BigDecimal fibonachi(BigDecimal n, BigDecimal result, BigDecimal[] memoization) {
         if(memoization[n.intValue()] != null) {
             return memoization[n.intValue()];
         }

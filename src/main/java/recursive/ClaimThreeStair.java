@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class ClaimThreeStair {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         BigDecimal[] memoization = new BigDecimal[3];
