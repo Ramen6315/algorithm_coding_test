@@ -6,7 +6,7 @@ import java.util.Scanner;
 // 값은 제대로 나오나 효율성 및 메모리 쪽에서 관리가 안됨 다시보고 줄일 수 있는 방법을 찾아야함
 public class CollatzLarge {
     static BigDecimal[] memoization;
-    public static void main(String[] args) {
+    public void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String collatz = scanner.nextLine();
         String[] collatzMinMax = collatz.split(" ");
@@ -31,7 +31,7 @@ public class CollatzLarge {
         System.out.println(resultIndex + " " + resultMax);
     }
 
-    private static BigDecimal collatz(BigDecimal bigDecimal, int max) {
+    private BigDecimal collatz(BigDecimal bigDecimal, int max) {
         if(bigDecimal.compareTo(BigDecimal.valueOf(max)) > 0) {
             if(bigDecimal.remainder(BigDecimal.valueOf(2)).equals(BigDecimal.valueOf(1))) {
                 return BigDecimal.valueOf(1).add(collatz(bigDecimal.multiply(BigDecimal.valueOf(3)).add(BigDecimal.valueOf(1)), max));
