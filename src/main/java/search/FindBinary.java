@@ -3,7 +3,7 @@ package search;
 import java.util.Scanner;
 
 public class FindBinary {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         int[] numbers = new int[number];

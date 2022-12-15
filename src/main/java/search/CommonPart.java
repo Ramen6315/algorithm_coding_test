@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 //유클리드 호제법을 통한 최대 공약수 푸는 방법은 기억 할 것
 public class CommonPart {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String bothNumber = scanner.nextLine();
         String[] number = bothNumber.split(" ");

@@ -3,7 +3,7 @@ package search;
 import java.util.Scanner;
 
 public class FillBlock {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int columns = scanner.nextInt();
         int[] cases = new int[columns];

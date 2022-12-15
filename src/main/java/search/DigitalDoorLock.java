@@ -4,7 +4,7 @@ import java.util.*;
 
 //최소공약수 로직을 간단하게 구할수 있어야함 로직이 너무 길다.
 public class DigitalDoorLock {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         int result = 1;
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
