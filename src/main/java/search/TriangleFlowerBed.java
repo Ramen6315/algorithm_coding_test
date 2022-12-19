@@ -2,13 +2,19 @@ package search;
 
 import java.util.Scanner;
 
-
-// 메모리를 많이 잡아먹지 않는 방법을 생각해서 풀어볼것
 public class TriangleFlowerBed {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int i = scanner.nextInt();
-        int cnt = 0;
+        Scanner sc = new Scanner(System.in);
+        int round = sc.nextInt();
+        int count = 0;
+        for(int a = 1; a < round ;a++) {
+            for(int b =1; b < round;b++) {
+                for(int c = 1;c < round;c++) {
+                    if(a <= b && b <= c && a+b>c && a+b+c == round)
+                        count++;
+                }
+            }
+        }
+        System.out.print(count);
     }
-
 }
