@@ -40,6 +40,6 @@ public class XYZ {
     }
 
     private static int calculateDiff(int min, int mid, int max) {
-        return (mid - min) / 2 + (max - mid) / 2;
+        return (max - min) / 2 + (max - mid) / 2;
     }
 }
