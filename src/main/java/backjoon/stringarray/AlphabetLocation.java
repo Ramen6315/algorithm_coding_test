@@ -1,14 +1,13 @@
-package backjoon;
+package backjoon.stringarray;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class AlphabetLocation {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         int[] alphabetValue = new int[26];
 
-        for (int i = 0; i < alphabetValue.length; i++) {
-            alphabetValue[i] = -1;
-        }
+        Arrays.fill(alphabetValue, -1);
 
         Scanner scanner = new Scanner(System.in);
         String word = scanner.next();

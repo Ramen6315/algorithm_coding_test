@@ -1,9 +1,9 @@
-package backjoon;
+package backjoon.stringarray;
 
 import java.util.Scanner;
 
 public class WaterBox {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
         char[] chars = s.toCharArray();
