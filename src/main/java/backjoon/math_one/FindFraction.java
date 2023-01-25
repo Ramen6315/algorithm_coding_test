@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  */
 public class FindFraction {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int loc = scanner.nextInt();
         int start = 1;

@@ -3,7 +3,7 @@ package backjoon.stringarray;
 import java.util.Scanner;
 
 public class CroatiaAlphabet {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         String[] croatiaConverts = {
                 "c=",
                 "c-",

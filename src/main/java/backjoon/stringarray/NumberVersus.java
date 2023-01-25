@@ -3,7 +3,7 @@ package backjoon.stringarray;
 import java.util.Scanner;
 
 public class NumberVersus {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         String[] numbers = input.split(" ");

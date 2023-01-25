@@ -3,7 +3,7 @@ package backjoon.stringarray;
 import java.util.Scanner;
 
 public class GroupChecker {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         int result = 0;
         Scanner scanner = new Scanner(System.in);
         int cnt = scanner.nextInt();

@@ -3,7 +3,7 @@ package backjoon.stringarray;
 import java.util.Scanner;
 
 public class Dial {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         String alphabet = "ABC DEF GHI JKL MNO PQRS TUV WXYZ";
         String[] dials = alphabet.split(" ");
 

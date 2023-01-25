@@ -3,7 +3,7 @@ package backjoon.math_one;
 import java.util.Scanner;
 
 public class BreakEvenPoint {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String total = scanner.nextLine();
         String[] totals = total.split(" ");
